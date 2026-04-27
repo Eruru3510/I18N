@@ -1,23 +1,34 @@
 <Project>
-  <PropertyGroup>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <LangVersion>preview</LangVersion>
-    
-    <Authors>Antelcat</Authors>
-    <Company>Antelcat</Company>
-    <Copyright>Copyright Antelcat. All rights reserved</Copyright>
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>preview</LangVersion>
 
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Authors>Antelcat</Authors>
+		<Company>Antelcat</Company>
+		<Copyright>Copyright Antelcat. All rights reserved</Copyright>
 
-    <Version>2.0.0-preview-1</Version>
-    <FileVersion>2.0.0</FileVersion>
-    <AssemblyVersion>2.0.0</AssemblyVersion>
-    
-    <RepositoryType>git</RepositoryType>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/Antelcat/Antelcat.I18N.git</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/Antelcat/Antelcat.I18N</PackageProjectUrl>
-  </PropertyGroup>
-  
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+		<Version>2.0.0-preview-1</Version>
+		<FileVersion>2.0.0</FileVersion>
+		<AssemblyVersion>2.0.0</AssemblyVersion>
+
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/Antelcat/Antelcat.I18N.git</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/Antelcat/Antelcat.I18N</PackageProjectUrl>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<EnableNETAnalyzers>false</EnableNETAnalyzers>
+		<AnalysisLevel>none</AnalysisLevel>
+		<RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+		<RunAnalyzersDuringLiveAnalysis>false</RunAnalyzersDuringLiveAnalysis>
+		<EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+		<Nullable>disable</Nullable>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<NoWarn>$(NoWarn);CS*;CA*;SA*</NoWarn>
+	</PropertyGroup>
+
 </Project>

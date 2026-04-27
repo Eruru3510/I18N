@@ -10,37 +10,33 @@ namespace Antelcat.I18N.Avalonia;
 /// <summary>
 /// It's not a binding, Just a key to get the value from the dictionary.
 /// </summary>
-public sealed class LanguageBinding : 
+public sealed class LanguageBinding :
 #if WPF
     Binding
 #elif AVALONIA
-    Binding
+	Binding
 #endif
 {
-    public LanguageBinding()
-    {
-    }
-    
-    public LanguageBinding(string key)
-    {
-        Key = key;
-    }
-    
-    [DefaultValue("")]
-    public string? Key
-    {
-        get => key;
-        set
-        {
-            if (string.IsNullOrEmpty(value)) return;
-            key = value;
-        }
-    }
+	public LanguageBinding () {
+	}
 
-    private string? key;
-    
+	public LanguageBinding (string key) {
+		Key = key;
+	}
+
+	[DefaultValue ("")]
+	public string? Key {
+		get => key;
+		set {
+			if (string.IsNullOrEmpty (value)) return;
+			key = value;
+		}
+	}
+
+	private string? key;
+
 #if AVALONIA
-    /*public override object ProvideValue(IServiceProvider serviceProvider)
+	/*public override object ProvideValue(IServiceProvider serviceProvider)
     {
         return this;
     }*/
